@@ -1,4 +1,7 @@
+
 # vb.net
+1. c# program to print a Binary Triangle.
+
 using System;<br>
 
 namespace Exercises<br>
