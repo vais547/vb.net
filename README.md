@@ -238,6 +238,54 @@ namespace Exercises<br>
 output:
 ![image](https://user-images.githubusercontent.com/98145574/152296526-cce86ec1-013b-4d8e-a2b1-76ecbd81a18d.png)<br><br>
 
+5.C#program to calculate volume of two boxes and find the resultant volume after addition og two boxes by implementing  operator overloading.
+
+using System;<br>
+
+
+namespace Exercises<br>
+{<br>
+    class Box<br>
+    {<br>
+        float width;<br>
+        float height;<br>
+        float length;<br>
+
+        public float Volume<br>
+        {<br>
+            get { return width * height * length; }<br>
+        }<br>
+        public Box(float width, float height, float length)<br>
+        {<br>
+            this.width = width;<br>
+            this.height = height;<br>
+            this.length = length;<br>
+        }<br>
+        public static float operator +(Box box1, Box box2)<br>
+        {<br>
+            return box1.Volume + box2.Volume;<br>
+        }<br>
+
+        public override String ToString()<br>
+        {<br>
+            return "box with width" + width + ",height" + height + " and length" + length;<br>
+        }<br>
+    }<br>
+
+    class OperatorOverloading<br>
+    {<br>
+        public static void Main()<br>
+        {<br>
+            Box box1 = new Box(10, 20, 30);<br>
+            Box box2 = new Box(25, 32, 15);<br>
+
+            Console.WriteLine("Volume of {0} is:{1}", box1, box1.Volume);<br>
+            Console.WriteLine("Volume of {0} is:{1}", box2, box2.Volume);<br>
+            Console.WriteLine("Volume after adding boxes:{0}", box1 + box2);<br>
+        }<br>
+    }<br>
+}<br>
+
 
 
         
