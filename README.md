@@ -35,6 +35,7 @@ namespace Exercises<br>
 output:
 ![image](https://user-images.githubusercontent.com/98145574/150483817-c9a65b1b-f1c5-4c82-b3ec-7983df9c8c39.png)<br><br><br>
 
+2.c#program to check whether the entered number is an  amicable number r not.
 using System;<br>
 
 namespace Exercises<br>
