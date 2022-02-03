@@ -194,7 +194,6 @@ namespace Exercises<br>
             Console.WriteLine("Grade    :" + grade);<br>
         }<br>
 
-
     }<br>
 
     class Multilevel<br>
@@ -206,5 +205,9 @@ namespace Exercises<br>
         }<br>
     }<br>
 }<br>
+
+  output:
+        ![image](https://user-images.githubusercontent.com/98145574/152293757-b4027bd8-1812-404b-9bb9-8d9b5d4e3b0a.png)
+
 
 
