@@ -207,7 +207,39 @@ namespace Exercises<br>
 }<br>
 
   output:
-        ![image](https://user-images.githubusercontent.com/98145574/152293757-b4027bd8-1812-404b-9bb9-8d9b5d4e3b0a.png)
+        ![image](https://user-images.githubusercontent.com/98145574/152293757-b4027bd8-1812-404b-9bb9-8d9b5d4e3b0a.png)<br><br>
+        
+ 4.C#program to create a Gray code.
+ using System;<br>
+
+namespace Exercises<br>
+{<br>
+    class GrayCode<br>
+    {<br>
+        static int getGray(int n)<br>
+        {<br>
+            return n^(n>>1);<br>
+        }<br>
+        static void Main(string[] args)<br>
+        {<br>
+            int InputNum, GrayNum;<br>
+            Console.Write("\nenter the decinmal number:");<br>
+            InputNum = Convert.ToInt32(Console.ReadLine());<br>
+
+
+            Console.WriteLine("\nBinary equivalent of {0}:   {1}", InputNum, Convert.ToString(InputNum, 2));<br>
+            GrayNum = getGray(InputNum);<br>
+            Console.WriteLine("\nGray code equivalent of {0}   {1}", InputNum, Convert.ToString(GrayNum, 2));<br>
+        }<br>
+    }<br>
+}<br>
+
+output:
+![image](https://user-images.githubusercontent.com/98145574/152296526-cce86ec1-013b-4d8e-a2b1-76ecbd81a18d.png)<br><br>
+
+
+
+        
 
 
 
