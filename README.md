@@ -377,6 +377,42 @@ output:
 ![image](https://user-images.githubusercontent.com/98145574/152477565-2290d2ca-aced-4ad1-b40f-d94987de1b71.png)<br>
 ![image](https://user-images.githubusercontent.com/98145574/152477668-527576b6-027e-492f-864c-624b3b02c2dc.png)
 
+8.C# program to find the frequency of the word "is" in a given sentence.
+
+using System;<br>
+
+namespace Exercises<br>
+{<br>
+    class FrequencyIS<br>
+    {<br>
+        static void Main(string[] args)<br>
+        {<br>
+            int count = 0;<br>
+            string inputString;<br>
+            Console.WriteLine("\n----Frequency of word 'is'-----");<br>
+            Console.Write("\nenter the input String:");<br>
+            inputString=Console.ReadLine();<br>
+            char[] separator = { ',',' ', '.','!','\n'};<br>
+            string testString = inputString.ToLower();<br>
+            String[] outcomes = testString.Split(separator);<br>
+
+            foreach(String s in outcomes)<br>
+            {<br>
+                Console.WriteLine(s);<br>
+                if (s == "is")<br>
+                    count++;<br>
+
+            }<br>
+Console.WriteLine("\nNumber of 'is' in'"+inputString+"'is:"+count);<br>
+        }<br>
+    }<br>
+}<br>
+
+output:
+
+![image](https://user-images.githubusercontent.com/98145574/152479984-c893eb27-34c5-455d-b66b-175db2c7bd2f.png)
+
+
 
 
 
