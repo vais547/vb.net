@@ -339,5 +339,41 @@ output:
 
 ![image](https://user-images.githubusercontent.com/98145574/152475297-3268c380-fa5c-41fc-b037-2ad96d379f7f.png)
 
+7.C# Program to generateRegister number automatically for 100 students using satic constructor.<br>
+
+using System;<br>
+
+namespace Exercises<br>
+{<br>
+    class RegisterNum<br>
+    {<br>
+        int regno;<br>
+        static int startNum;<br>
+
+        static RegisterNum()<br>
+        {<br>
+            startNum = 20210000;<br>
+
+        }<br>
+        RegisterNum()<br>
+        {<br>
+            regno = ++startNum;<br>
+        }<br>
+        public static void Main(string[] args)<br>
+        {<br>
+            for (int i = 0; i < 100; i++)<br>
+            {<br>
+                RegisterNum Student = new RegisterNum();<br>
+                Console.WriteLine("Student {0}:{1}", i+1, Student.regno);<br>
+            }<br>
+        }<br>
+    }<br>
+}<br>
+
+
+output:
+
+![image](https://user-images.githubusercontent.com/98145574/152477061-fef3c19f-d953-42c0-b9ab-7264873d7f29.png)
+
 
 
