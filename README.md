@@ -412,6 +412,63 @@ output:
 
 ![image](https://user-images.githubusercontent.com/98145574/152479984-c893eb27-34c5-455d-b66b-175db2c7bd2f.png)
 
+9.C# program that benchmarks 2D,jagged array allocation.
+
+using System;<br>
+using System.Diagnostics;<br>
+
+namespace Exercises<br>
+{<br>
+    class BenchmarkAllocatin<br>
+{<br>
+       const int _max=100000;<br>
+            static void Main(string[] args)<br>
+        {<br>
+            var Arr2D = new int[100, 100];<br>
+            var ArrJagged = new int[100][];<br>
+
+            for (int i = 0; i < 100; i++)<br>
+            {<br>
+                ArrJagged[i] = new int[100];<br>
+            }<br>
+
+            var Stopwatch2D = Stopwatch.StartNew();<br>
+            for (int i = 0; i<_max; i++)<br>
+            {<br>
+                for (int j = 0; j < 100; j++)<br>
+                {<br>
+                    for (int k = 0; k < 100; k++)<br>
+                    {<br>
+                        Arr2D[j, k] = k;<br>
+                    }<br>
+                }<br>
+            }<br>
+            Stopwatch2D.Stop();<br>
+
+            var StopwatchJagged=Stopwatch.StartNew();<br>
+            for (int i = 0; i < _max; i++)<br>
+            {<br>
+                for (int j = 0; j < 100; j++)<br>
+                {<br>
+                    for (int k = 0; k < 100; k++)<br>
+                    {<br>
+                        ArrJagged[j][k] = k;<br>
+                    }<br>
+                }<br>
+            }<br>
+
+            StopwatchJagged.Stop();<br>
+            Console.Write("\nTime taken for allocation in case of 2D array:");<br>
+            Console.WriteLine(Stopwatch2D.Elapsed.TotalMilliseconds + "milliseconds");<br>
+            Console.Write("\nTime taken for allocation in case  of jagged array:");<br>
+            Console.WriteLine(StopwatchJagged.Elapsed.TotalMilliseconds + "milliseconds");<br>
+
+        }<br>
+    }<br>
+}<br>
+output:
+![image](https://user-images.githubusercontent.com/98145574/152484081-28adfd48-b3a4-4663-8a40-8d651498b554.png)
+
 
 
 
