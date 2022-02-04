@@ -471,7 +471,60 @@ output:
 ![image](https://user-images.githubusercontent.com/98145574/152484081-28adfd48-b3a4-4663-8a40-8d651498b554.png)
 
 
+10.C# program to find the sum of the values on diaganal of the matrix.
 
+using System;<br>
 
+namespace Exercises<br>
+{<br>
+    class SumOfDiagonals<br>
+    {<br>
+        static void Main(string[] args)<br>
+        {<br>
+            int MaxRow, MaxCol, Sum = 0;<br>
+            int[,] Matrix;<br>
+
+            Console.WriteLine("\n------SUM OF DIAGONAL OF A MATRIX-----\n");<br>
+            Console.Write("\nenter the number f rows:");<br>
+            MaxRow = Convert.ToInt32(Console.ReadLine());<br>
+            Console.Write("\nenter the number f columns:");<br>
+            MaxCol = Convert.ToInt32(Console.ReadLine());<br>
+
+            if (MaxRow != MaxCol)<br>
+            {<br>
+                Console.WriteLine("\nThe Dimensions entered are not not of square matrix.");<br>
+                Console.WriteLine("\nExiting the program..");<br>
+                return;<br>
+            }<br>
+            Matrix = new int[MaxRow, MaxCol];<br>
+            for (int i = 0; i < MaxRow; i++)<br>
+            {<br>
+                for (int j = 0; j < MaxCol; j++)<br>
+                {<br>
+                    Console.Write("\nEnter the ({0},{1})th element of matrix:", (i + 1), (j + 1));<br>
+                    Matrix[i,j] = Convert.ToInt32(Console.ReadLine());<br>
+                }<br>
+            }<br>
+            Console.WriteLine("\nThe enterd Matrix is:");<br>
+            for (int i = 0; i < MaxRow; i++)<br>
+            {<br>
+                for (int j = 0; j < MaxCol; j++)<br>
+                {<br>
+                    Console.Write(" " + Matrix[i, j]);<br>
+
+                    if (i == j)<br>
+                    {<br>
+                        Sum += Matrix[i, j];<br>
+                    }<br>
+                }<br>
+                    Console.WriteLine();<br>
+                }<br>
+                Console.WriteLine("\nthe sum of Diagonal is" + Sum);<br>
+            }<br>
+        }<br>
+    }<br>
+
+output:
+![image](https://user-images.githubusercontent.com/98145574/152489439-cc34906e-8248-4bcd-a3cb-50d00f5ffe5a.png)
 
 
