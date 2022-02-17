@@ -525,6 +525,109 @@ namespace Exercises<br>
     }<br>
 
 output:
+
 ![image](https://user-images.githubusercontent.com/98145574/152489439-cc34906e-8248-4bcd-a3cb-50d00f5ffe5a.png)
+
+
+11.C#program to create a file,check the existence of the file and read the contents of the file.<br><br>
+
+using System;<br>
+using System.IO;<br>
+
+namespace Exercises<br>
+{<br>
+    class FileRead<br>
+    {<br>
+        public static void Main()<br>
+        {<br>
+            string fileName;<br>
+            while (true)<br>
+            {<br>
+                Console.WriteLine("\n------MENU---------\n");<br>
+                Console.WriteLine("\n1 .create a file");<br>
+                Console.WriteLine("\n2 .existence of the file");<br>
+                Console.WriteLine("\n3 .read the contenets of the file");<br>
+                Console.WriteLine("\n4.Exit");<br>
+                Console.Write("\nEnter your choice:");<br>
+                int ch = int.Parse(Console.ReadLine());<br>
+                switch (ch)<br>
+
+                {<br>
+                    case 1:<br>
+                        Console.Write("\nEnter the file name create:");<br>
+                        fileName = Console.ReadLine();<br>
+                        Console.WriteLine("\nwrite the contents to the file:\n");<br>
+                        string r = Console.ReadLine();<br>
+                        using (StreamWriter fileStr = File.CreateText(fileName))<br>
+                        {<br>
+                            fileStr.WriteLine(r);<br>
+                        }<br>
+                        Console.WriteLine("File is creasted...");<br>
+                        break;<br>
+
+                    case 2:<br>
+                        Console.Write("\nEnter the file name:");<br>
+                        fileName = Console.ReadLine();<br>
+                        if (File.Exists(fileName))<br>
+                        {<br>
+                            Console.WriteLine("File exists..");<br>
+                        }<br>
+                        else<br>
+                        {<br>
+                            Console.WriteLine("File does not exists in the current directory!");<br>
+                        }<br>
+                        break;<br>
+
+                    case 3:<br>
+                        Console.Write("Enter the file name to read the contents:\n");<br>
+                        fileName = Console.ReadLine();<br>
+                        if (File.Exists(fileName))<br>
+                        {<br>
+                            using (StreamReader sr = File.OpenText(fileName))<br>
+                            {<br>
+                                string s = "";<br>
+                                Console.WriteLine("Here is the contents of the file:");<br>
+                                while ((s = sr.ReadLine()) != null)<br>
+                                {<br>
+                                    Console.WriteLine(s);<br>
+                                }<br>
+                                Console.WriteLine("");<br>
+                            }<br>
+                        }<br>
+                        else<br>
+                        {<br>
+                            Console.WriteLine("File does not exists");<br>
+                        }<br>
+                        break;<br>
+
+                    case 4:<br>
+                        Console.WriteLine("\nExiting...");<br>
+                        return;<br>
+
+                    default:<br>
+                        Console.WriteLine("\ninvalied choice");<br>
+                        break;<br>
+
+
+                }<br>
+            }<br>
+        }<br>
+    }<br>
+}<br>
+
+output:
+
+![image](https://user-images.githubusercontent.com/98145574/154414125-01cf4fa3-685d-46f3-b872-b84143bf3d2a.png)<br>
+
+![image](https://user-images.githubusercontent.com/98145574/154413784-935c5b25-9c0d-4602-9606-72c9b2c72da0.png)<br>
+![image](https://user-images.githubusercontent.com/98145574/154413960-de4e56f6-23d4-4872-aac7-aff586d4efe9.png)<br>
+
+
+12.C#program to perform File comparision.
+
+
+
+
+
 
 
