@@ -623,7 +623,52 @@ output:
 ![image](https://user-images.githubusercontent.com/98145574/154413960-de4e56f6-23d4-4872-aac7-aff586d4efe9.png)<br>
 
 
-12.C#program to perform File comparision.
+12.C#program to perform File comparision.<br>
+
+using System;<br>
+using System.IO;<br>
+
+namespace Exercises<br>
+{<br>
+    class FileRead<br>
+    {<br>
+        public static void Main()<br>
+        {<br>
+            string file1;<br>
+            string file2;<br>
+
+            Console.Write("Enter the first fule path:");<br>
+            file1 = Console.ReadLine();<br>
+
+            Console.WriteLine("Enter the second file path:");<br>
+            file2 = Console.ReadLine();<br>
+
+            if (!File.Exists(file1))<br>
+            {<br>
+                Console.WriteLine("First file does not exists!");<br>
+            }<br>
+            else if (!File.Exists(file2))<br>
+            {<br>
+                Console.WriteLine("Second file does not exists!");<br>
+            }<br>
+            else if (File.ReadAllText(file1) == (File.ReadAllText(file2)))<br>
+            {<br>
+                Console.WriteLine("both file contain the same content");<br>
+            }<br>
+            else<br>
+            {
+                Console.WriteLine("Contents of file are not same");<br>
+            }<br>
+
+        }<br>
+    }   <br>
+}<br>
+
+
+output:
+
+![image](https://user-images.githubusercontent.com/98145574/154417472-850aad84-27af-466d-9060-45f4ac0da859.png)<br>
+![image](https://user-images.githubusercontent.com/98145574/154417824-9964d48a-824e-49bf-a7a1-e13f9a33e817.png)<br>
 
 
 
