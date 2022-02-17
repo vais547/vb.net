@@ -667,6 +667,13 @@ namespace Exercises<br>
 
 output:
 
+file1:<br>
+![image](https://user-images.githubusercontent.com/98145574/154418845-62253bb9-8117-486d-9399-1a189e7dc2c4.png)<br>
+file2:<br>
+![image](https://user-images.githubusercontent.com/98145574/154419114-4f050be0-3d19-478f-b2eb-8be7a27d46a6.png)<br>
+file3:<br>
+![image](https://user-images.githubusercontent.com/98145574/154419243-32bf4b76-f545-4fd8-a428-7b51ff7eaf31.png)
+
 ![image](https://user-images.githubusercontent.com/98145574/154417472-850aad84-27af-466d-9060-45f4ac0da859.png)<br>
 ![image](https://user-images.githubusercontent.com/98145574/154417824-9964d48a-824e-49bf-a7a1-e13f9a33e817.png)<br>
 
