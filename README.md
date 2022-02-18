@@ -748,6 +748,48 @@ output:
 
 **14.C# program to create thread pools.**<br>
 
+using System;<br>
+using System.Threading;<br>
+
+
+namespace Exercises<br>
+{<br>
+    class ThreadpoolProg<br>
+    {<br>
+        public void ThreadFun1(object obj)<br>
+        {<br>
+            int loop = 0;<br>
+            for (loop = 0; loop <= 4; loop++)<br>
+            {<br>
+                Console.WriteLine("Thread1 is executing");<br>
+            }<br>
+        }<br>
+        public void ThreadFun2(object obj)<br>
+        {<br>
+            int loop = 0;<br>
+            for (loop = 0; loop <= 4; loop++)<br>
+            {<br>
+                Console.WriteLine("Thread2 is Executing");<br>
+            }<br>
+        }<br>
+        public static void Main()<br>
+        {<br>
+            ThreadpoolProg TP = new ThreadpoolProg();<br>
+            for (int i = 0; i < 2; i++)<br>
+            {<br>
+                ThreadPool.QueueUserWorkItem(new WaitCallback(TP.ThreadFun1));<br>
+                ThreadPool.QueueUserWorkItem(new WaitCallback(TP.ThreadFun2));<br>
+            }<br>
+            Console.ReadKey();<br>
+        }<br>
+
+    }<br>
+}<br>
+output:
+
+![image](https://user-images.githubusercontent.com/98145574/154627433-bbd64b0a-4c18-4296-a723-c389936943a3.png)<br>
+
+
 
 
 
