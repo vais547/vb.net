@@ -1,6 +1,6 @@
 
 # vb.net
-1. c# program to print a Binary Triangle.
+**1. c# program to print a Binary Triangle.**
 
 using System;<br>
 
@@ -32,10 +32,10 @@ namespace Exercises<br>
     }<br>
 }<br>
 
-output:
+**output:**
 ![image](https://user-images.githubusercontent.com/98145574/150483817-c9a65b1b-f1c5-4c82-b3ec-7983df9c8c39.png)<br><br><br>
 
-2.c#program to check whether the entered number is an  amicable number r not.
+**2.c#program to check whether the entered number is an  amicable number r not.**
 using System;<br>
 
 namespace Exercises<br>
@@ -80,11 +80,11 @@ namespace Exercises<br>
     }<br>
 }<br>
 
-output:<br>
+**output:**<br>
 ![image](https://user-images.githubusercontent.com/98145574/152285918-683d3d1b-cd3a-4e67-8710-97e6aac8a157.png)<br><br>
 ![image](https://user-images.githubusercontent.com/98145574/152286153-52704dc5-4af8-4968-9373-c52995162fe2.png)
 
-3.C# program to illustrate multilevel inheritance with virtual methods(displaying student details.)
+**3.C# program to illustrate multilevel inheritance with virtual methods(displaying student details.)**
 using System;<br>
 namespace Exercises<br>
 {<br>
@@ -206,11 +206,11 @@ namespace Exercises<br>
     }<br>
 }<br>
 
-  output:
+  **output:**
   
    ![image](https://user-images.githubusercontent.com/98145574/152293757-b4027bd8-1812-404b-9bb9-8d9b5d4e3b0a.png)<br><br>
-        
- 4.C#program to create a Gray code.
+        *
+ **4.C#program to create a Gray code**.
  using System;<br>
 
 namespace Exercises<br>
@@ -235,10 +235,10 @@ namespace Exercises<br>
     }<br>
 }<br>
 
-output:
+**output:**
 ![image](https://user-images.githubusercontent.com/98145574/152296526-cce86ec1-013b-4d8e-a2b1-76ecbd81a18d.png)<br><br>
 
-5.C#program to calculate volume of two boxes and find the resultant volume after addition og two boxes by implementing  operator overloading.
+**5.C#program to calculate volume of two boxes and find the resultant volume after addition og two boxes by implementing  operator overloading.**
 
 using System;<br>
 
@@ -286,12 +286,12 @@ namespace Exercises<br>
     }<br>
 }<br>
 
-output:
+**output:**
 
 ![image](https://user-images.githubusercontent.com/98145574/152300079-0074c081-3cfd-42d2-9108-5f473d07879c.png)
 
 
-6.C#Program to Implement Principles of Delegates(Converting input string toUpercase first,last and entire string).
+**6.C#Program to Implement Principles of Delegates(Converting input string toUpercase first,last and entire string).**
 using System;
 
 
@@ -335,11 +335,11 @@ namespace Exercises<br>
 
 
 
-output:
+**output:**
 
 ![image](https://user-images.githubusercontent.com/98145574/152475297-3268c380-fa5c-41fc-b037-2ad96d379f7f.png)
 
-7.C# Program to generateRegister number automatically for 100 students using satic constructor.<br>
+**7.C# Program to generateRegister number automatically for 100 students using satic constructor.<br>**
 
 using System;<br>
 
@@ -371,13 +371,13 @@ namespace Exercises<br>
 }<br>
 
 
-output:
+**output:**
 
 ![image](https://user-images.githubusercontent.com/98145574/152477061-fef3c19f-d953-42c0-b9ab-7264873d7f29.png)<br>
 ![image](https://user-images.githubusercontent.com/98145574/152477565-2290d2ca-aced-4ad1-b40f-d94987de1b71.png)<br>
 ![image](https://user-images.githubusercontent.com/98145574/152477668-527576b6-027e-492f-864c-624b3b02c2dc.png)
 
-8.C# program to find the frequency of the word "is" in a given sentence.
+**8.C# program to find the frequency of the word "is" in a given sentence.**
 
 using System;<br>
 
@@ -408,11 +408,11 @@ Console.WriteLine("\nNumber of 'is' in'"+inputString+"'is:"+count);<br>
     }<br>
 }<br>
 
-output:
+**output:**
 
 ![image](https://user-images.githubusercontent.com/98145574/152479984-c893eb27-34c5-455d-b66b-175db2c7bd2f.png)
 
-9.C# program that benchmarks 2D,jagged array allocation.
+**9.C# program that benchmarks 2D,jagged array allocation.**
 
 using System;<br>
 using System.Diagnostics;<br>
@@ -466,13 +466,12 @@ namespace Exercises<br>
         }<br>
     }<br>
 }<br>
-output:
+**output:**
 
 ![image](https://user-images.githubusercontent.com/98145574/152484081-28adfd48-b3a4-4663-8a40-8d651498b554.png)
 
 
-10.C# program to find the sum of the values on diaganal of the matrix.
-
+**10.C# program to find the sum of the values on diaganal of the matrix.**
 using System;<br>
 
 namespace Exercises<br>
@@ -524,12 +523,12 @@ namespace Exercises<br>
         }<br>
     }<br>
 
-output:
+**output:**
 
 ![image](https://user-images.githubusercontent.com/98145574/152489439-cc34906e-8248-4bcd-a3cb-50d00f5ffe5a.png)
 
 
-11.C#program to create a file,check the existence of the file and read the contents of the file.<br><br>
+**11.C#program to create a file,check the existence of the file and read the contents of the file**.<br><br>
 
 using System;<br>
 using System.IO;<br>
@@ -615,7 +614,7 @@ namespace Exercises<br>
     }<br>
 }<br>
 
-output:
+**output:**
 
 ![image](https://user-images.githubusercontent.com/98145574/154414125-01cf4fa3-685d-46f3-b872-b84143bf3d2a.png)<br>
 
@@ -623,7 +622,7 @@ output:
 ![image](https://user-images.githubusercontent.com/98145574/154413960-de4e56f6-23d4-4872-aac7-aff586d4efe9.png)<br>
 
 
-12.C#program to perform File comparision.<br>
+**12.C#program to perform File comparision**.<br>
 
 using System;<br>
 using System.IO;<br>
@@ -665,7 +664,7 @@ namespace Exercises<br>
 }<br>
 
 
-output:
+**output:**
 
 file1:<br>
 ![image](https://user-images.githubusercontent.com/98145574/154418845-62253bb9-8117-486d-9399-1a189e7dc2c4.png)<br>
@@ -742,7 +741,7 @@ class ICompInterface<br>
 }<br>
 }<br>
 
-output:
+**output:**
 
 ![image](https://user-images.githubusercontent.com/98145574/154624572-15cac980-0b1a-4d5d-bbe4-6f8a4107ca03.png)<br><br>
 
@@ -785,7 +784,7 @@ namespace Exercises<br>
 
     }<br>
 }<br>
-output:
+**output:**
 
 ![image](https://user-images.githubusercontent.com/98145574/154627433-bbd64b0a-4c18-4296-a723-c389936943a3.png)<br>
 
@@ -839,7 +838,7 @@ public class Age<br>
     }<br>
 }<br>
 
-output:
+**output:**
 
 ![image](https://user-images.githubusercontent.com/98145574/154629257-a966556d-8546-422c-8c1c-92774a0274cd.png)<br><br>
 
