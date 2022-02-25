@@ -951,6 +951,7 @@ public class FactorialExample<br>
     } <br>
 }<br>
 **output:**
+
 ![image](https://user-images.githubusercontent.com/98145574/155662818-0668f3f9-18f1-4622-8bde-1d7f322149b8.png)<br><br>
 
 **20.Write a C# program to check amstrong number.**<br>
@@ -1009,10 +1010,11 @@ public class SumExample<br>
 }<br>
 
 **output:**
+
 ![image](https://user-images.githubusercontent.com/98145574/155665943-845b02f0-4258-49ad-8e92-b027f28b0d44.png)<br><br>
 
 
-**22.Wite a C# program to reverse a given number.**<br>
+**22.Write a C# program to reverse a given number.**<br>
 
 using System;<br>
 
