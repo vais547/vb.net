@@ -742,7 +742,7 @@ class ICompInterface<br>
 
         Console.WriteLine();<br>
         Console.ReadLine();<br>
-    }<br>
+ } <br>
 }<br>
 }<br>
 
@@ -891,7 +891,7 @@ public class PrimeNumberExample<br>
                 flag = 1;<br>
                 break;<br>
 
-            }<br>
+            } <br>
         }<br>
         if (flag == 0)<br>
             Console.Write("number is prime.");<br>
