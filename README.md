@@ -954,3 +954,37 @@ public class FactorialExample<br>
 }<br>
 **output:**
 ![image](https://user-images.githubusercontent.com/98145574/155662818-0668f3f9-18f1-4622-8bde-1d7f322149b8.png)<br><br>
+
+**20.Write a C# program to check amstrong number.**<br>
+
+
+using System;<br>
+
+public class AmstrongExample<br>
+{<br>
+    public static void Main(string[] args)<br>
+    {<br>
+        int n, r, sum = 0, temp;<br>
+        Console.Write("enter the number=");<br>
+        n = int.Parse(Console.ReadLine());<br>
+        temp = n;<br>
+        while(n>0)<br>
+        {<br>
+            r = n % 10;<br>
+            sum=sum+(r*r*r);<br>
+            n = n / 10;<br>
+
+        }<br>
+        if (temp == sum)<br>
+            Console.Write("Amstrong Number.");<br>
+        else<br>
+            Console.Write("Not Amstrong number.");<br>
+
+    }<br>
+}<br>
+
+**output:**
+![image](https://user-images.githubusercontent.com/98145574/155663703-eea3a24c-9e0e-4232-8270-8dd4281c7c61.png)<br>
+![image](https://user-images.githubusercontent.com/98145574/155663894-038f8d8d-c1f8-447d-9376-c26e474282bb.png)<br>
+
+
