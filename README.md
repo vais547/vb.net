@@ -344,7 +344,7 @@ namespace Exercises<br>
 
 ![image](https://user-images.githubusercontent.com/98145574/152475297-3268c380-fa5c-41fc-b037-2ad96d379f7f.png)
 
-**7.C# Program to generateRegister number automatically for 100 students using satic constructor.**<br>
+**7.C# Program to generate Register number automatically for 100 students using satic constructor.**<br>
 
 using System;<br>
 
