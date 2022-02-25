@@ -1014,4 +1014,30 @@ public class SumExample<br>
 ![image](https://user-images.githubusercontent.com/98145574/155665943-845b02f0-4258-49ad-8e92-b027f28b0d44.png)<br><br>
 
 
+**22.Wite a C# program to reverse a given number.**<br>
+
+using System;<br>
+
+public class ReverseExample<br>
+{<br>
+    public static void Main(string[] args)<br>
+    {<br>
+        int n,reverse=0,rem;<br>
+        Console.Write("enter the number:");<br>
+        n = int.Parse(Console.ReadLine());<br>
+        while (n != 0)<br>
+        {<br>
+            rem = n % 10;<br>
+            reverse = reverse * 10 + rem;<br>
+            n /= 10;<br>
+        }<br>
+        Console.Write("Reversed number:" + reverse);<br>
+    }<br>
+}<br>
+
+**output:**
+
+![image](https://user-images.githubusercontent.com/98145574/155667241-a3ce4a59-e138-49f6-aab4-6c29c6e427d5.png)<br>
+
+
 
