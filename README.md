@@ -476,7 +476,7 @@ namespace Exercises<br>
 ![image](https://user-images.githubusercontent.com/98145574/152484081-28adfd48-b3a4-4663-8a40-8d651498b554.png)
 
 
-**10.C# program to find the sum of the values on diaganal of the matrix.**<br>
+**10.C# program to find the sum of the values on diagonal of the matrix.**<br>
 using System;<br>
 
 namespace Exercises<br>
@@ -533,7 +533,7 @@ namespace Exercises<br>
 ![image](https://user-images.githubusercontent.com/98145574/152489439-cc34906e-8248-4bcd-a3cb-50d00f5ffe5a.png)
 
 
-**11.C#program to create a file,check the existence of the file and read the contents of the file**.<br><br>
+**11.C# program to create a file,check the existence of the file and read the contents of the file**.<br><br>
 
 using System;<br>
 using System.IO;<br>
@@ -627,7 +627,7 @@ namespace Exercises<br>
 ![image](https://user-images.githubusercontent.com/98145574/154413960-de4e56f6-23d4-4872-aac7-aff586d4efe9.png)<br>
 
 
-**12.C#program to perform File comparision**.<br>
+**12.C# program to perform File comparision**.<br>
 
 using System;<br>
 using System.IO;<br>
