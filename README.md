@@ -846,3 +846,29 @@ public class Age<br>
 
 ![image](https://user-images.githubusercontent.com/98145574/154629257-a966556d-8546-422c-8c1c-92774a0274cd.png)<br><br>
 
+**16.write a program on fibonacci series.**<br>
+
+using System;<br>
+
+public class FibonacciExample<br>
+{<br>
+    public static void Main(string[] args)<br>
+    {<br>
+        int n1=0,n2 = 1,n3,i,number;<br>
+        Console.Write("enter the number of elements:");<br>
+        number = int.Parse(Console.ReadLine());<br>
+        Console.Write(n1+ " "+n2+" ");<br>
+        for (i = 2; i < number; ++i)<br>
+        {<br>
+            n3 = n1 + n2;<br>
+            Console.Write(n3 + " ");<br>
+            n1 = n2;<br>
+            n2 = n3;<br>
+        }<br>
+    }<br>
+}<br>
+
+**output:**
+
+![image](https://user-images.githubusercontent.com/98145574/155658246-a3b87433-e28d-4927-959f-de4b75ab3166.png)<br>
+
