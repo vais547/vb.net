@@ -213,7 +213,7 @@ namespace Exercises<br>
   
    ![image](https://user-images.githubusercontent.com/98145574/152293757-b4027bd8-1812-404b-9bb9-8d9b5d4e3b0a.png)<br><br>
         *
- **4.C#program to create a Gray code**.<br>
+ **4.C# program to create a Gray code**.<br>
  
  using System;<br>
 
@@ -242,7 +242,7 @@ namespace Exercises<br>
 **output:**
 ![image](https://user-images.githubusercontent.com/98145574/152296526-cce86ec1-013b-4d8e-a2b1-76ecbd81a18d.png)<br><br>
 
-**5.C#program to calculate volume of two boxes and find the resultant volume after addition og two boxes by implementing  operator overloading.**<br>
+**5.C# program to calculate volume of two boxes and find the resultant volume after addition og two boxes by implementing  operator overloading.**<br>
 
 using System;<br>
 
@@ -295,7 +295,7 @@ namespace Exercises<br>
 ![image](https://user-images.githubusercontent.com/98145574/152300079-0074c081-3cfd-42d2-9108-5f473d07879c.png)
 
 
-**6.C#Program to Implement Principles of Delegates(Converting input string toUpercase first,last and entire string).**<br>
+**6.C# Program to Implement Principles of Delegates(Converting input string toUpercase first,last and entire string).**<br>
 
 using System;
 
