@@ -872,3 +872,36 @@ public class FibonacciExample<br>
 
 ![image](https://user-images.githubusercontent.com/98145574/155658246-a3b87433-e28d-4927-959f-de4b75ab3166.png)<br>
 
+**17.write a c# program to check prime number.**<br>
+using System;<br>
+
+public class PrimeNumberExample<br>
+{<br>
+    public static void Main(string[] args)<br>
+    {<br>
+        int n, i, m = 0, flag = 0;<br>
+        Console.Write("Enter the numberto check Prime:");<br>
+        n=int.Parse(Console.ReadLine());<br>
+        m = n / 2;<br>
+        for(i=2;i<=m;i++)<br>
+        {<br>
+            if(n%i==0)<br>
+            {<br>
+                Console.Write("Number is not Prime.");<br>
+                flag = 1;<br>
+                break;<br>
+
+            }<br>
+        }<br>
+        if (flag == 0)<br>
+            Console.Write("number is prime.");<br>
+    }<br>
+}<br>
+
+**output:**
+
+![image](https://user-images.githubusercontent.com/98145574/155659683-0dd76953-bf0b-442c-9749-a6ea32e3dabd.png)<br>
+![image](https://user-images.githubusercontent.com/98145574/155659785-03fccd36-b48b-4ff5-8f17-e2589b4cfec1.png)<br.
+
+
+
