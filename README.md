@@ -949,8 +949,7 @@ public class FactorialExample<br>
             fact = fact * i;<br>
         }<br>
        Console.Write("Factorial of" +number+" is: "+fact);<br>
-
-    }<br>
+    } <br>
 }<br>
 **output:**
 ![image](https://user-images.githubusercontent.com/98145574/155662818-0668f3f9-18f1-4622-8bde-1d7f322149b8.png)<br><br>
