@@ -901,7 +901,56 @@ public class PrimeNumberExample<br>
 **output:**
 
 ![image](https://user-images.githubusercontent.com/98145574/155659683-0dd76953-bf0b-442c-9749-a6ea32e3dabd.png)<br>
-![image](https://user-images.githubusercontent.com/98145574/155659785-03fccd36-b48b-4ff5-8f17-e2589b4cfec1.png)<br.
+![image](https://user-images.githubusercontent.com/98145574/155659785-03fccd36-b48b-4ff5-8f17-e2589b4cfec1.png)<br>
 
+**18.write a C# program to check palindrome number.**<br>
+using System;<br>
 
+public class PalindromeExample<br>
 
+{<br>
+    public static void Main(string[] args)<br>
+    { <br>
+    int n, r, sum = 0, temp;<br>
+    Console.Write("enter the number:");<br>
+        n=int.Parse(Console.ReadLine());<br>
+        temp=n;<br>
+        while(n>0)<br>
+        {<br>
+        r=n%10;<br>
+        sum=(sum*10)+r;<br>
+        n=n/10;<br>
+}<br><br>
+   if(temp == sum)<br>
+    Console.Write("Number is Palindrome");<br>
+        else<br>
+    Console.Write("Number is not a Palindrome");<br>
+}<br>
+}<br>
+
+**output:**
+
+![image](https://user-images.githubusercontent.com/98145574/155661732-5c9c7a97-676f-4558-9abb-4f96da91c3c3.png)<br>
+![image](https://user-images.githubusercontent.com/98145574/155661885-376b92c5-8fd1-4062-acbe-e3787a028c8d.png)<br>
+
+**19.Write a C# program to print factorial of a number.**<br>
+
+using System;<br>
+
+public class FactorialExample<br>
+{<br>
+    public static void Main(string[] args)<br>
+    {<br>
+        int i, fact = 1, number;<br>
+        Console.Write("Enter any number:");<br>
+        number = int.Parse(Console.ReadLine());<br>
+        for (i = 1; i <= number; i++)<br>
+        { <br>
+            fact = fact * i;<br>
+        }<br>
+       Console.Write("Factorial of" +number+" is: "+fact);<br>
+
+    }<br>
+}<br>
+**output:**
+![image](https://user-images.githubusercontent.com/98145574/155662818-0668f3f9-18f1-4622-8bde-1d7f322149b8.png)<br><br>
