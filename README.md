@@ -890,8 +890,7 @@ public class PrimeNumberExample<br>
                 Console.Write("Number is not Prime.");<br>
                 flag = 1;<br>
                 break;<br>
-
-            } <br>
+           } <br>
         }<br>
         if (flag == 0)<br>
             Console.Write("number is prime.");<br>
