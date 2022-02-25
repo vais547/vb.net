@@ -984,7 +984,34 @@ public class AmstrongExample<br>
 }<br>
 
 **output:**
+
+
 ![image](https://user-images.githubusercontent.com/98145574/155663703-eea3a24c-9e0e-4232-8270-8dd4281c7c61.png)<br>
 ![image](https://user-images.githubusercontent.com/98145574/155663894-038f8d8d-c1f8-447d-9376-c26e474282bb.png)<br>
+
+**21.Write a C# program to print sum of digits.**<br>
+
+using System;<br>
+
+public class SumExample<br>
+{<br>
+    public static void Main(string[] args)<br>
+    {<br>
+        int n, r, sum = 0, m;<br>
+        Console.Write("enetr the number:");<br>
+        n=int.Parse(Console.ReadLine());<br>
+        while(n>0)<br>
+        {<br>
+            m = n % 10;<br>
+            sum = sum + m;<br>
+            n = n / 10;<br>
+        }<br>
+        Console.Write("Sum is=" + sum);<br>
+    }<br>
+}<br>
+
+**output:**
+![image](https://user-images.githubusercontent.com/98145574/155665943-845b02f0-4258-49ad-8e92-b027f28b0d44.png)<br><br>
+
 
 
