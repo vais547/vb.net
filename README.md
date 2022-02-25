@@ -880,7 +880,7 @@ public class PrimeNumberExample<br>
     public static void Main(string[] args)<br>
     {<br>
         int n, i, m = 0, flag = 0;<br>
-        Console.Write("Enter the numberto check Prime:");<br>
+        Console.Write("Enter the number to check Prime:");<br>
         n=int.Parse(Console.ReadLine());<br>
         m = n / 2;<br>
         for(i=2;i<=m;i++)<br>
