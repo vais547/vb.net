@@ -823,7 +823,6 @@ public class AgeIsNegativeException : Exception<br>
 {<br>
     public AgeIsNegativeException(string message):base(message)<br>
     {<br>
-
     }<br>
 }<br>
 public class Age<br>
