@@ -732,14 +732,12 @@ class ICompInterface<br>
             new Fraction(10,8),<br>
             new Fraction(34,7)<br>
         };<br>
-
         Array.Sort(a);  <br>
         Console.WriteLine("Implementing the IComparable Interface in "+" Displaying Fraction:");<br>
             foreach (Fraction f in a)<br>
             {<br>
             Console.WriteLine(f + "");<br>
         }<br>
-
         Console.WriteLine();<br>
         Console.ReadLine();<br>
  } <br>
@@ -818,7 +816,6 @@ using System;<br>
         }<br>
     }<br>
 }<br>
-
 public class AgeIsNegativeException : Exception<br>
 {<br>
     public AgeIsNegativeException(string message):base(message)<br>
