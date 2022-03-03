@@ -1039,5 +1039,24 @@ public class ReverseExample<br>
 
 ![image](https://user-images.githubusercontent.com/98145574/155667241-a3ce4a59-e138-49f6-aab4-6c29c6e427d5.png)<br>
 
+**23.Write a c# program to swap two numbers without using third variable.**
+
+using System;
+public class SwapExample
+{
+    public static void Main(string[] args)
+    {
+        int a = 5, b = 10;
+        Console.WriteLine("Before swap a= " + a + " b= " + b);
+        a = a * b; //a=50 (5*10)      
+        b = a / b; //b=5 (50/10)      
+        a = a / b; //a=10 (50/5)    
+        Console.Write("After swap a= " + a + " b= " + b);
+    }
+}
+**output:**
+![image](https://user-images.githubusercontent.com/98145574/156503996-2f96ad72-1386-4c98-81fd-165fe2049e8e.png)
+
+
 
 
