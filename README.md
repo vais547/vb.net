@@ -13,8 +13,6 @@ namespace Exercises<br>
             int number, digit = 1;<br>
             Console.Write("\nEnter the number of lines:");<br>
             number = Convert.ToInt32(Console.ReadLine());<br>
-
-
             for (int i = 1; i <= number; i++)<br>
             {<br>
                 for (int space = number - i;space > 0;space--)<br>
@@ -51,7 +49,6 @@ namespace Exercises<br>
             num1 = Convert.ToInt32(Console.ReadLine());<br>
             Console.Write("\nenter the second number:");<br>
             num2= Convert.ToInt32(Console.ReadLine());<br>
-
             for(int i=1;i<num1;i++)<br>
             {<br>
                 if(num1%i==0)<br>
@@ -59,7 +56,6 @@ namespace Exercises<br>
                         sum1 +=i;<br>
                     }<br>
             }<br>
-<br>
             for (int i = 1; i < num2; i++)<br>
             {<br>
                 if (num2 % i == 0)<br>
@@ -67,7 +63,6 @@ namespace Exercises<br>
                     sum2 += i;<br>
                 }<br>
             }<br>
-
             if (sum1 == num2 && sum2 == num1)<br>
             {<br>
                 Console.WriteLine("\nThe numbers {0} and {1} are amicable.", num1, num2);<br>
@@ -76,7 +71,6 @@ namespace Exercises<br>
             {<br>
                 Console.WriteLine("\nThe numbers {0} and {1} are  notamicable.", num1, num2);<br>
             }<br>
-            
         }<br>
     }<br>
 }<br>
@@ -96,15 +90,12 @@ namespace Exercises<br>
         string name;<br>
         int age;<br>
         string gender;<br>
-
         public PersonalDetails(string name, int age, string gender)<br>
         {<br>
             this.name = name;<br>
             this.age = age;<br>
             this.gender = gender;<br>
-
         }<br>
-
         public virtual void Display()<br>
         {<br>
             Console.WriteLine("\n-----PERSONEL DETAILS-------\n");<br>
@@ -112,7 +103,6 @@ namespace Exercises<br>
             Console.WriteLine("Age    :" + age);<br>
             Console.WriteLine("Gender  :" + gender);<br>
             }<br>
-            
     }<br>
 
     class CourseDetails : PersonalDetails<br>
