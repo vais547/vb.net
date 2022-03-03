@@ -1039,23 +1039,56 @@ public class ReverseExample<br>
 
 ![image](https://user-images.githubusercontent.com/98145574/155667241-a3ce4a59-e138-49f6-aab4-6c29c6e427d5.png)<br>
 
-**23.Write a c# program to swap two numbers without using third variable.**
+**23.Write a c# program to swap two numbers without using third variable.**<br>
 
-using System;
-public class SwapExample
-{
-    public static void Main(string[] args)
-    {
-        int a = 5, b = 10;
-        Console.WriteLine("Before swap a= " + a + " b= " + b);
-        a = a * b; //a=50 (5*10)      
-        b = a / b; //b=5 (50/10)      
-        a = a / b; //a=10 (50/5)    
-        Console.Write("After swap a= " + a + " b= " + b);
-    }
-}
-**output:**
-![image](https://user-images.githubusercontent.com/98145574/156503996-2f96ad72-1386-4c98-81fd-165fe2049e8e.png)
+using System;<br>
+public class SwapExample<br>
+{<br>
+    public static void Main(string[] args)<br>
+    {<br>
+        int a = 5, b = 10;<br>
+        Console.WriteLine("Before swap a= " + a + " b= " + b);<br>
+        a = a * b; //a=50 (5*10)<br>      
+        b = a / b; //b=5 (50/10)<br>      
+        a = a / b; //a=10 (50/5)<br>    
+        Console.Write("After swap a= " + a + " b= " + b);<br>
+    }<br>
+}<br>
+**output:**<br>
+
+![image](https://user-images.githubusercontent.com/98145574/156503996-2f96ad72-1386-4c98-81fd-165fe2049e8e.png)<br>
+
+**24.Write a c# program to generate fibonacci triangle.**<br>
+
+using System;<br>
+public class PrintExample<br>
+{<br>
+    public static void Main(string[] args)<br>
+    {<br>
+        int a = 0, b = 1, i, c, n, j;<br>
+        Console.Write("Enter the limit: ");<br>
+        n = int.Parse(Console.ReadLine());<br>
+        for (i = 1; i <= n; i++)<br>
+        {<br>
+            a = 0;<br>
+            b = 1;<br>
+            Console.Write(b + "\t");<br>
+            for (j = 1; j < i; j++)<br>
+            {<br>
+                c = a + b;<br>
+                Console.Write(c + "\t");<br>
+                a = b;<br>
+                b = c;<br>
+            }<br>
+            Console.Write("\n");<br>
+        }<br>
+    }<br>
+}<br>
+
+**output:**<br>
+
+![image](https://user-images.githubusercontent.com/98145574/156508485-f7e48059-4386-42e1-b02f-362eb0ca4f76.png)
+
 
 
 
