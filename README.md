@@ -972,13 +972,11 @@ public class AmstrongExample<br>
             r = n % 10;<br>
             sum=sum+(r*r*r);<br>
             n = n / 10;<br>
-
         }<br>
         if (temp == sum)<br>
             Console.Write("Amstrong Number.");<br>
         else<br>
             Console.Write("Not Amstrong number.");<br>
-
     }<br>
 }<br>
 
