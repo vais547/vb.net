@@ -1155,50 +1155,92 @@ namespace n2<br>
 ![image](https://user-images.githubusercontent.com/98145574/158756262-37a624f1-101b-44b3-8862-b285085f011e.png)<br>
 
 **26.c# program to create Progress bar control.**<br>
-using System;
-using System.ComponentModel;
-using System.Threading;
-using System.Windows.Forms;
+using System;<br>
+using System.ComponentModel;<br>
+using System.Threading;<br>
+using System.Windows.Forms;<br>
 
-namespace n4
-{
-    public partial class Form1 : Form
-    {
-        public Form1()
-        {
-            InitializeComponent();
-        }
+namespace n4<br>
+{<br>
+    public partial class Form1 : Form<br>
+    {<br>
+        public Form1()<br>
+        {<br>
+            InitializeComponent();<br>
+        }<br>
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            backgroundWorker1.WorkerReportsProgress = true;
-            backgroundWorker1.RunWorkerAsync();
+        private void Form1_Load(object sender, EventArgs e)<br>
+        {<br>
+            backgroundWorker1.WorkerReportsProgress = true;<br>
+            backgroundWorker1.RunWorkerAsync();<br>
 
-        }
+        }<br>
 
-        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
-        {
-            for(int i=0;i<=100;i++)
-            {
-                Thread.Sleep(50);
-                backgroundWorker1.ReportProgress(i);
+        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)<br>
+        {<br>
+            for(int i=0;i<=100;i++)<br>
+            {<br>
+                Thread.Sleep(50);<br>
+                backgroundWorker1.ReportProgress(i);<br>
 
-            }
+            }<br>
 
-        }
-
-        private void backgroundWorker1_ProgressChanged(object sender, ProgressChangedEventArgs e)
-        {
-            progressBar2.Value = e.ProgressPercentage;
-            this.Text = "Progress:" + e.ProgressPercentage.ToString() + "%";
-
-        }
-    }
-}
-
-
-**Output:**
+        }<br>
+        private void backgroundWorker1_ProgressChanged(object sender, ProgressChangedEventArgs e)<br>
+        {<br>
+            progressBar2.Value = e.ProgressPercentage;<br>
+            this.Text = "Progress:" + e.ProgressPercentage.ToString() + "%";<br>
+        }<br>
+    }<br>
+}<br>
+**Output:**<br>
 ![image](https://user-images.githubusercontent.com/98145574/158941946-7597ba3e-0138-4b32-8388-f2727ad43af5.png)<br>
+
+**27.C# program to perform reversal,Padding and Trimming operations on string.**<br>
+using System;<br>
+using System.Windows.Forms;<br>
+namespace n1<br>
+{<br>
+    public partial class Form1 : Form<br>
+    {<br>
+        public Form1()<br>
+        {<br>
+            InitializeComponent();<br>
+        }<br>
+        private void button1_Click(object sender, EventArgs e)<br>
+        {<br>
+            string inputString, revstr = "";<br>
+            int Length;<br>
+            inputString = textBox1.Text;<br>
+            Length = inputString.Length - 1;<br>
+            while (Length >= 0)<br>
+            {<br>
+                revstr = revstr + inputString[Length];<br>
+                Length--;<br>
+            }<br>
+            MessageBox.Show("Reverse String is:" + revstr, "Result");<br>
+        }<br>
+        private void button2_Click(object sender, EventArgs e)<br>
+        {<br>
+            string inputString;<br>
+            inputString = textBox1.Text;<br>
+            MessageBox.Show("The string after trimming:" + inputString.Trim(), "Result");<br>
+        }<br>
+        private void button3_Click(object sender, EventArgs e)<br>
+        {<br>
+            string inputString;<br>
+            inputString = textBox1.Text;<br>
+            inputString = inputString.PadLeft(10, '*');<br>
+            inputString = inputString.PadRight(15, '*');<br>
+            MessageBox.Show("String After Padding:" + inputString, "Result");<br>
+        }<br>
+    }<br>
+  }<br>
+  
+ ** output:**<br>
+ ![image](https://user-images.githubusercontent.com/98145574/158944778-ff3f7560-96b8-4ff6-8e43-76ec049b8c07.png)<br>
+
+
 
 
 
