@@ -1154,6 +1154,51 @@ namespace n2<br>
 ![image](https://user-images.githubusercontent.com/98145574/158753401-a145d739-baf6-4e1a-b912-26d77a9e3c90.png)<br>
 ![image](https://user-images.githubusercontent.com/98145574/158756262-37a624f1-101b-44b3-8862-b285085f011e.png)<br>
 
+**26.c# program to create Progress bar control.**<br>
+using System;
+using System.ComponentModel;
+using System.Threading;
+using System.Windows.Forms;
+
+namespace n4
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            backgroundWorker1.WorkerReportsProgress = true;
+            backgroundWorker1.RunWorkerAsync();
+
+        }
+
+        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
+        {
+            for(int i=0;i<=100;i++)
+            {
+                Thread.Sleep(50);
+                backgroundWorker1.ReportProgress(i);
+
+            }
+
+        }
+
+        private void backgroundWorker1_ProgressChanged(object sender, ProgressChangedEventArgs e)
+        {
+            progressBar2.Value = e.ProgressPercentage;
+            this.Text = "Progress:" + e.ProgressPercentage.ToString() + "%";
+
+        }
+    }
+}
+
+
+**Output:**
+![image](https://user-images.githubusercontent.com/98145574/158941946-7597ba3e-0138-4b32-8388-f2727ad43af5.png)<br>
 
 
 
