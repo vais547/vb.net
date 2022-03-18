@@ -1239,6 +1239,10 @@ namespace n1<br>
   
  ** output:**<br>
  ![image](https://user-images.githubusercontent.com/98145574/158944778-ff3f7560-96b8-4ff6-8e43-76ec049b8c07.png)<br>
+ ![image](https://user-images.githubusercontent.com/98145574/158945028-9af80401-6fce-4766-9124-4c75da113899.png)<br>
+ ![image](https://user-images.githubusercontent.com/98145574/158945175-b4d5a3eb-f40a-4eaa-ac13-4afe06e112a6.png)<br>
+
+
 
 
 
