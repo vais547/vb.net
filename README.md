@@ -1168,23 +1168,18 @@ namespace n4<br>
         {<br>
             InitializeComponent();<br>
         }<br>
-
         private void Form1_Load(object sender, EventArgs e)<br>
         {<br>
             backgroundWorker1.WorkerReportsProgress = true;<br>
             backgroundWorker1.RunWorkerAsync();<br>
-
         }<br>
-
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)<br>
         {<br>
             for(int i=0;i<=100;i++)<br>
             {<br>
                 Thread.Sleep(50);<br>
                 backgroundWorker1.ReportProgress(i);<br>
-
             }<br>
-
         }<br>
         private void backgroundWorker1_ProgressChanged(object sender, ProgressChangedEventArgs e)<br>
         {<br>
