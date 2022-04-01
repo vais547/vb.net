@@ -1441,7 +1441,6 @@ namespace notepad7<br>
             txtContent.Font = new Font("Arial", 16);<br>
             txtContent.AcceptsTab = true;<br>
             txtContent.Padding = new Padding(8);<br>
-
             this.Controls.Add(toolBar);<br>
             this.Controls.Add(txtContent);<br>
         }<br>
