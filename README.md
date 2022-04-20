@@ -104,23 +104,17 @@ namespace Exercises<br>
             Console.WriteLine("Gender  :" + gender);<br>
             }<br>
     }<br>
-
     class CourseDetails : PersonalDetails<br>
     {<br>
-    
         int regno;<br>
         string course;<br>
         int semester;<br>
-
-
         public CourseDetails(string name, int age, string gender, int regno, string course, int semester) : base(name, age, gender)<br>
         {<br>
             this.regno = regno;<br>
             this.course = course;<br>
             this.semester = semester;<br>
-
         }<br>
-
         public override void Display()<br>
         {<br>
             base.Display();<br>
@@ -128,8 +122,6 @@ namespace Exercises<br>
             Console.WriteLine("Register number:" + regno);<br>
             Console.WriteLine("course    :" + course);<br>
             Console.WriteLine("semeaster     :" + semester);<br>
-
-
         }<br>
     }<br>
     class MarksDetails : CourseDetails<br>
@@ -139,29 +131,23 @@ namespace Exercises<br>
         float average;<br>
         string grade;<br>
         int flagFail;<br>
-
         public MarksDetails(string name, int age, string gender, int regno, string Course, int semester, int[] marks) : base(name, age, gender, regno, Course, semester)<br>
-
         {<br>
             total = 0;<br>
             for (int i = 0; i < 5; i++)<br>
             {<br>
                 this.marks[i] = marks[i];<br>
                 total += marks[i];<br>
-
                 if (marks[i] < 35)<br>
                 {<br>
                     flagFail = 1;<br>
                 }<br>
             }<br>
-
             Calculate();<br>
-
         }<br>
         private void Calculate()<br>
         {<br>
             average = total / 5;<br>
-
             if (flagFail == 1 || average < 40)<br>
                 grade = "Fail";<br>
             else if (average >= 70)<br>
@@ -173,7 +159,6 @@ namespace Exercises<br>
             else<br>
                 grade = "pass Class";<br>
         }<br>
-
         public override void Display()<br>
         {<br>
             base.Display();<br>
@@ -186,9 +171,7 @@ namespace Exercises<br>
             Console.WriteLine("Average    :" + average);<br>
             Console.WriteLine("Grade    :" + grade);<br>
         }<br>
-
     }<br>
-
     class Multilevel<br>
     {<br>
         public static void Main(string[] args)<br>
@@ -198,9 +181,7 @@ namespace Exercises<br>
         }<br>
     }<br>
 }<br>
-
-  **output:**
-  
+  **output:**<br>
    ![image](https://user-images.githubusercontent.com/98145574/152293757-b4027bd8-1812-404b-9bb9-8d9b5d4e3b0a.png)<br><br>
         *
  **4.C# program to create a Gray code**.<br>
