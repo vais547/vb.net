@@ -241,13 +241,13 @@ public float Volume<br>
             return box1.Volume + box2.Volume;<br>
         }<br>
 
-        public override String ToString()<br>
+public override String ToString()<br>
         {<br>
             return "box with width" + width + ",height" + height + " and length" + length;<br>
         }<br>
     }<br>
 
-    class OperatorOverloading<br>
+class OperatorOverloading<br>
     {<br>
         public static void Main()<br>
         {<br>
