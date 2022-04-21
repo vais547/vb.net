@@ -226,7 +226,7 @@ namespace Exercises<br>
         float height;<br>
         float length;<br>
 
-        public float Volume<br>
+public float Volume<br>
         {<br>
             get { return width * height * length; }<br>
         }<br>
