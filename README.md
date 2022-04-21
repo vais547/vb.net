@@ -203,7 +203,7 @@ namespace Exercises<br>
             InputNum = Convert.ToInt32(Console.ReadLine());<br>
 
 
-            Console.WriteLine("\nBinary equivalent of {0}:   {1}", InputNum, Convert.ToString(InputNum, 2));<br>
+Console.WriteLine("\nBinary equivalent of {0}:   {1}", InputNum, Convert.ToString(InputNum, 2));<br>
             GrayNum = getGray(InputNum);<br>
             Console.WriteLine("\nGray code equivalent of {0}   {1}", InputNum, Convert.ToString(GrayNum, 2));<br>
         }<br>
