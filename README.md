@@ -1706,6 +1706,76 @@ maxHeight);<br>
 ![image](https://user-images.githubusercontent.com/98145574/161212939-cfafbe4b-e229-42ac-b67e-29d328d89c7b.png)<br>
 ![image](https://user-images.githubusercontent.com/98145574/161213061-043330ca-404e-4c8e-8698-7841b540368a.png)<br>
 
+    30.money conversion.
+using System;<br>
+using System.Collections.Generic;<br>
+using System.ComponentModel;<br>
+using System.Data;<br>
+using System.Drawing;<br>
+using System.Linq;<br>
+using System.Text;<br>
+using System.Threading.Tasks;<br>
+using System.Windows.Forms;<br>
+
+namespace WindowsFormsApp3<br>
+{<br>
+    public partial class Form1 : Form<br>
+    {<br>
+        public Form1()<br>
+        {<br>
+            InitializeComponent();<br>
+        }<br>
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            label4.Visible = true;<br>
+            if(textBox1.Text=="")<br>
+            {<br>
+                label4.Text = "Enter the amount";<br>
+            }<br>
+            else<br>
+            {<br>
+                Double convertedamt = Convert.ToDouble(textBox1.Text);<br>
+                if(comboBox1.SelectedItem=="INR"&&comboBox2.SelectedItem=="USD")<br><br>
+                {<br>
+                    Double a = convertedamt / 74;<br>
+                    label4.Text = a + "$";<br>
+
+                }<br>
+                else if(comboBox1.SelectedItem== "INR" && comboBox2.SelectedItem == "SAR")<br>
+                {<br>
+                    Double a = convertedamt / 17;<br>
+                    label4.Text = a + "SAR";<br>
+                }<br>
+                else if (comboBox1.SelectedItem == "INR" && comboBox2.SelectedItem == "EUR")<br>
+                {<br>
+                    Double a = convertedamt / 11;<br>
+                    label4.Text = a + "EUR";<br>
+                }<br>
+                else<br>
+                {<br>
+                    label4.Text = "Please enter the conversion code.";<br>
+                }<br>
+            }<br>
+
+        }<br>
+
+        private void button2_Click(object sender, EventArgs e)<br>
+        {<br>
+            textBox1.Text = "";<br>
+            label4.Text = "";<br>
+        }<br>
+    }<br>
+
+}<br>
+    
+    output:
+    ![image](https://user-images.githubusercontent.com/98145574/165697631-d348065a-5268-43ea-a4b7-c3242fbea2c4.png)<br>
+    ![image](https://user-images.githubusercontent.com/98145574/165697976-186bfb64-43cf-43d5-9347-25aaa9e14705.png)<br>
+
+
+    
 
 
 
